@@ -1,5 +1,3 @@
-![Shopify Royalties Management System](assets/social-banner.png)
-
 ```
    _____ __              _ ____             ____                  ____  _           
   / ___// /_  ____  ____(_) __/_  __       / __ \____  __  ______ _/ / /_(_)__  _____
