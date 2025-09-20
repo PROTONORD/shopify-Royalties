@@ -1,5 +1,5 @@
 #!/bin/bash
-# PROTONORD Shopify Dashboard Reboot Test
+# Shopify Royalties Dashboard Reboot Test
 # Simulerer reboot ved å stoppe alle tjenester og starte de på nytt
 
 echo "🔄 SIMULERER REBOOT - STOPPER ALLE TJENESTER"

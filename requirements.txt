@@ -1,4 +1,4 @@
-# PROTONORD Shopify Management System - Python Dependencies
+# Shopify Royalties Management System - Python Dependencies
 
 # Core dependencies for Shopify API and data processing
 requests==2.32.5

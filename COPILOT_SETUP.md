@@ -1,6 +1,6 @@
 # 🤖 GitHub Copilot Pro Setup Guide
 
-This guide is specifically designed for **GitHub Copilot Pro** users who want to set up the PROTONORD Shopify Management System automatically through VS Code.
+This guide is specifically designed for **GitHub Copilot Pro** users who want to set up the Shopify Royalties Management System automatically through VS Code.
 
 ## 🚀 Prerequisites for Copilot Setup
 
@@ -16,9 +16,9 @@ Before starting, ensure you have:
 Copy and paste this prompt into GitHub Copilot Chat in VS Code:
 
 ```
-🛍️ PROTONORD SHOPIFY MANAGEMENT SYSTEM SETUP
+🛍️ SHOPIFY ROYALTIES MANAGEMENT SYSTEM SETUP
 
-Please help me set up the complete PROTONORD Shopify Management System on my Ubuntu server. I need you to:
+Please help me set up the complete Shopify Royalties Management System on my Ubuntu server. I need you to:
 
 1. **Create the project structure** with all necessary folders
 2. **Set up PostgreSQL database** with proper schema for Shopify data

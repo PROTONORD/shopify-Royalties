@@ -88,8 +88,8 @@ If you have **GitHub Copilot Pro** in VS Code, you can use our specialized setup
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/PROTONORD/Protonord_no.git
-cd Protonord_no
+git clone https://github.com/your-username/shopify-royalties.git
+cd shopify-royalties
 ```
 
 ### Step 2: Run Setup Script
@@ -187,7 +187,7 @@ Visit `http://your-server:8080` to access the main dashboard with:
 
 #### Database Access
 - **pgAdmin**: `http://your-server:5050`
-  - Email: admin@protonord.no
+  - Email: admin@your-domain.com
   - Password: admin123
 
 #### File System
@@ -289,7 +289,7 @@ See full API documentation at: `http://your-server:8080/api/docs`
 
 #### "Permission denied" errors
 ```bash
-sudo chown -R $USER:$USER /home/$USER/protonord_shopify_system
+sudo chown -R $USER:$USER /home/$USER/shopify_royalties_system
 chmod +x *.sh
 ```
 
@@ -436,13 +436,13 @@ src/
 - **Installation Guide**: [docs/installation.md](docs/installation.md)
 
 ### Community
-- **Issues**: [GitHub Issues](https://github.com/PROTONORD/Protonord_no/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/PROTONORD/Protonord_no/discussions)
+- **Issues**: [GitHub Issues](https://github.com/your-username/shopify-royalties/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-username/shopify-royalties/discussions)
 
 ### Commercial Support
 For enterprise support and custom development:
-- **Email**: support@protonord.no
-- **Website**: https://protonord.no
+- **Email**: support@your-domain.com
+- **Website**: https://your-domain.com
 
 ## 📄 License
 
@@ -469,6 +469,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by PROTONORD**
+**Made with ❤️ for the community**
 
 *Transform your Shopify data into actionable business intelligence*

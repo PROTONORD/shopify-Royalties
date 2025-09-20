@@ -29,7 +29,7 @@ services:
     image: dpage/pgladmin4:latest
     container_name: shopify-pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@protonord.no
+      PGADMIN_DEFAULT_EMAIL: admin@your-domain.com
       PGADMIN_DEFAULT_PASSWORD: admin123_secure_2025
       PGADMIN_CONFIG_SERVER_MODE: 'False'
       PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'

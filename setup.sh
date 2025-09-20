@@ -1,5 +1,5 @@
 #!/bin/bash
-# PROTONORD Shopify Management System - Master Setup Script
+# Shopify Royalties Management System - Master Setup Script
 # This script sets up the complete system on Ubuntu/Debian
 
 set -e  # Exit on any error
@@ -39,7 +39,7 @@ if ! sudo -n true 2>/dev/null; then
     error "This script requires sudo privileges. Please ensure you can run sudo commands."
 fi
 
-log "🚀 Starting PROTONORD Shopify Management System Setup"
+log "🚀 Starting Shopify Royalties Management System Setup"
 log "=================================================="
 
 # System information
@@ -51,7 +51,7 @@ log "- User: $(whoami)"
 log "- Home: $HOME"
 
 # Create project directory
-PROJECT_DIR="$HOME/protonord_shopify_system"
+PROJECT_DIR="$HOME/shopify_royalties_system"
 if [ ! -d "$PROJECT_DIR" ]; then
     log "Creating project directory: $PROJECT_DIR"
     mkdir -p "$PROJECT_DIR"
@@ -138,7 +138,7 @@ fi
 if [ ! -f ".env" ]; then
     log "🔐 Creating environment file..."
     cat > .env << 'EOF'
-# PROTONORD Shopify System Environment Variables
+# Shopify Royalties System Environment Variables
 SHOPIFY_STORE_URL=your-store.myshopify.com
 SHOPIFY_ACCESS_TOKEN=your-access-token
 DATABASE_URL=postgresql://shopifyuser:shopify_secure_password_2025@localhost:5433/shopifydata
@@ -156,7 +156,7 @@ if [ -f "docker-compose.yml" ]; then
     if [ ! -f "sql/init.sql" ]; then
         log "Creating database initialization script..."
         cat > sql/init.sql << 'EOF'
--- PROTONORD Shopify Database Initialization
+-- Shopify Royalties Database Initialization
 -- This script creates the necessary tables and indexes
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
@@ -224,7 +224,7 @@ fi
 log "🔧 Creating systemd service..."
 cat > /tmp/shopify-dashboard.service << EOF
 [Unit]
-Description=PROTONORD Shopify Dashboard Services
+Description=Shopify Royalties Dashboard Services
 After=docker.service postgresql.service network.target
 Requires=docker.service
 Wants=postgresql.service
@@ -255,7 +255,7 @@ mkdir -p scripts
 
 cat > scripts/start_dashboard.sh << 'EOF'
 #!/bin/bash
-# PROTONORD Shopify Dashboard Startup Script
+# Shopify Royalties Dashboard Startup Script
 
 cd "$(dirname "$0")/.."
 source venv/bin/activate
@@ -267,7 +267,7 @@ log() {
     echo "$(date): $1" | tee -a "$LOG_FILE"
 }
 
-log "🚀 Starting PROTONORD Shopify Dashboard Services"
+log "🚀 Starting Shopify Royalties Dashboard Services"
 
 # Start Docker containers if not running
 if ! docker-compose ps | grep -q "Up"; then
@@ -294,12 +294,12 @@ echo $WEBSERVER_PID > /tmp/shopify_webserver.pid
 
 log "✅ Dashboard started on port 8080"
 log "✅ pgAdmin available on port 5050"
-log "🎉 PROTONORD Shopify System is ready!"
+log "🎉 Shopify Royalties System is ready!"
 EOF
 
 cat > scripts/stop_dashboard.sh << 'EOF'
 #!/bin/bash
-# PROTONORD Shopify Dashboard Stop Script
+# Shopify Royalties Dashboard Stop Script
 
 LOG_FILE="logs/system/shutdown.log"
 mkdir -p "$(dirname "$LOG_FILE")"
@@ -308,7 +308,7 @@ log() {
     echo "$(date): $1" | tee -a "$LOG_FILE"
 }
 
-log "🛑 Stopping PROTONORD Shopify Dashboard Services"
+log "🛑 Stopping Shopify Royalties Dashboard Services"
 
 # Stop web server
 if [ -f /tmp/shopify_webserver.pid ]; then
@@ -331,9 +331,9 @@ chmod +x scripts/start_dashboard.sh scripts/stop_dashboard.sh
 # Create service check script
 cat > scripts/check_services.sh << 'EOF'
 #!/bin/bash
-# PROTONORD Service Health Check
+# Shopify Royalties Service Health Check
 
-echo "🔍 PROTONORD SHOPIFY SYSTEM STATUS"
+echo "🔍 SHOPIFY ROYALTIES SYSTEM STATUS"
 echo "=================================="
 
 # Check Docker containers
@@ -385,9 +385,9 @@ chmod +x scripts/check_services.sh
 
 # Set up cron jobs
 log "⏰ Setting up cron jobs..."
-(crontab -l 2>/dev/null | grep -v "protonord_shopify"; cat << EOF
+(crontab -l 2>/dev/null | grep -v "shopify_royalties"; cat << EOF
 
-# PROTONORD Shopify System Automation
+# Shopify Royalties System Automation
 # Ensure services start after reboot
 @reboot sleep 60 && $PROJECT_DIR/scripts/start_dashboard.sh
 
@@ -404,7 +404,7 @@ EOF
 
 # Create log rotation
 log "📝 Setting up log rotation..."
-sudo cat > /etc/logrotate.d/protonord-shopify << EOF
+sudo cat > /etc/logrotate.d/shopify-royalties << EOF
 $PROJECT_DIR/logs/*.log {
     daily
     missingok
@@ -436,13 +436,13 @@ if [ ! -d "web" ]; then
 fi
 
 # Copy existing HTML files or create basic ones
-if [ -f "../protonord_no/index.html" ]; then
-    cp ../protonord_no/index.html web/
+if [ -f "../shopify_royalties/index.html" ]; then
+    cp ../shopify_royalties/index.html web/
     log "Copied existing dashboard HTML"
 fi
 
-if [ -f "../protonord_no/shopify_database_viewer.html" ]; then
-    cp ../protonord_no/shopify_database_viewer.html web/
+if [ -f "../shopify_royalties/shopify_database_viewer.html" ]; then
+    cp ../shopify_royalties/shopify_database_viewer.html web/
     log "Copied existing database viewer HTML"
 fi
 
@@ -454,7 +454,7 @@ if [ ! -f "web/index.html" ]; then
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROTONORD Shopify Management System</title>
+    <title>Shopify Royalties Management System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -463,10 +463,10 @@ if [ ! -f "web/index.html" ]; then
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header bg-primary text-white">
-                        <h1 class="card-title mb-0">🛍️ PROTONORD Shopify System</h1>
+                        <h1 class="card-title mb-0">🛍️ Shopify Royalties System</h1>
                     </div>
                     <div class="card-body">
-                        <p class="lead">Welcome to the PROTONORD Shopify Management System!</p>
+                        <p class="lead">Welcome to the Shopify Royalties Management System!</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card mb-3">
@@ -516,7 +516,7 @@ cat > QUICK_START.md << 'EOF'
 ## Access Points
 - **Dashboard**: http://localhost:8080
 - **pgAdmin**: http://localhost:5050
-  - Email: admin@protonord.no
+  - Email: admin@your-domain.com
   - Password: admin123_secure_2025
 
 ## Configuration Files to Edit
@@ -548,7 +548,7 @@ EOF
 # Summary
 log "🎉 Setup completed successfully!"
 log "=================================================="
-success "PROTONORD Shopify Management System is installed!"
+success "Shopify Royalties Management System is installed!"
 log ""
 log "📋 Next Steps:"
 log "1. Edit config/shopify_config.py with your Shopify credentials"

@@ -1,7 +1,7 @@
 {
   "Servers": {
     "1": {
-      "Name": "PROTONORD Shopify Database",
+      "Name": "Shopify Royalties Database",
       "Group": "Shopify",
       "Host": "shopify-postgres",
       "Port": 5432,

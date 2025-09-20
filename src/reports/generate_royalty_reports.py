@@ -187,7 +187,7 @@ def main():
     # Last opp til cloud storage
     print("Laster opp rapporter til cloud storage...")
     upload_to_cloud_storage(year)
-    print(f"Royalty-rapporter for {year} er lastet opp til Jottacloud under 'protonord_shopify/rapport'.")
+    print(f"Royalty-rapporter for {year} er lastet opp til Jottacloud under 'shopify_royalties/rapport'.")
 
 if __name__ == "__main__":
     main()

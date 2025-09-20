@@ -1,7 +1,7 @@
 #!/bin/bash
 # Test script for å sjekke at alle tjenester kjører riktig
 
-echo "🔍 SJEKKER PROTONORD SHOPIFY DASHBOARD TJENESTER"
+echo "🔍 SJEKKER SHOPIFY ROYALTIES DASHBOARD TJENESTER"
 echo "================================================"
 
 # Farger for output
@@ -53,7 +53,7 @@ echo ""
 
 # Sjekk cronjobs
 echo -e "${YELLOW}⏰ Cronjobs:${NC}"
-if crontab -l | grep -E "(shopify|protonord)" > /dev/null; then
+if crontab -l | grep -E "(shopify|royalties)" > /dev/null; then
     echo -e "${GREEN}✅ Shopify cronjobs er konfigurert${NC}"
 else
     echo -e "${RED}❌ Shopify cronjobs mangler${NC}"
@@ -82,10 +82,10 @@ echo ""
 # Sjekk filer
 echo -e "${YELLOW}📁 Viktige filer:${NC}"
 files=(
-    "/home/kau005/protonord_no/organized_shopify_backup.py"
-    "/home/kau005/protonord_no/index.html"
-    "/home/kau005/protonord_no/shopify_database_viewer.html"
-    "/home/kau005/protonord_no/start_dashboard.sh"
+    "/home/$USER/shopify_royalties/organized_shopify_backup.py"
+    "/home/$USER/shopify_royalties/index.html"
+    "/home/$USER/shopify_royalties/shopify_database_viewer.html"
+    "/home/$USER/shopify_royalties/start_dashboard.sh"
 )
 
 for file in "${files[@]}"; do
@@ -107,7 +107,7 @@ echo "📊 Database Viewer: http://$IP:8080/shopify_database_viewer.html"
 
 echo ""
 echo -e "${YELLOW}🔄 For å starte manuelt:${NC}"
-echo "/home/kau005/protonord_no/start_dashboard.sh"
+echo "/home/$USER/shopify_royalties/start_dashboard.sh"
 
 echo ""
 echo "================================================"

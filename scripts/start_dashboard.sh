@@ -1,15 +1,15 @@
 #!/bin/bash
-# PROTONORD Shopify Dashboard Startup Script
+# Shopify Royalties Dashboard Startup Script
 # Starter alle nødvendige tjenester for Shopify dashboard
 
-LOG_FILE="/home/kau005/protonord_no/logs/startup.log"
+LOG_FILE="/home/$USER/shopify_royalties/logs/startup.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 log() {
     echo "$(date): $1" >> "$LOG_FILE"
 }
 
-log "🚀 STARTER PROTONORD SHOPIFY DASHBOARD TJENESTER"
+log "🚀 STARTER SHOPIFY ROYALTIES DASHBOARD TJENESTER"
 
 # Vent på at docker er klar
 log "Venter på Docker..."
@@ -33,7 +33,7 @@ else
     
     docker run -d --name pgadmin \
         -p 0.0.0.0:5050:80 \
-        -e PGADMIN_DEFAULT_EMAIL=admin@protonord.no \
+        -e PGADMIN_DEFAULT_EMAIL=admin@your-domain.com \
         -e PGADMIN_DEFAULT_PASSWORD=admin123 \
         dpage/pgadmin4 >> "$LOG_FILE" 2>&1
 
@@ -51,7 +51,7 @@ else
     log "Starter webserver..."
     pkill -f "http.server 8080" 2>/dev/null || true
     
-    cd /home/kau005/protonord_no
+    cd /home/$USER/shopify_royalties
     /usr/bin/python3 -m http.server 8080 --bind 0.0.0.0 > /dev/null 2>&1 &
     WEBSERVER_PID=$!
 
