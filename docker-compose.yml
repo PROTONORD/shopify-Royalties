@@ -1,0 +1,95 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database for Shopify data
+  shopify-postgres:
+    image: postgres:15-alpine
+    container_name: shopify-postgres
+    environment:
+      POSTGRES_DB: shopifydata
+      POSTGRES_USER: shopifyuser
+      POSTGRES_PASSWORD: shopify_secure_password_2025
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --lc-collate=C --lc-ctype=C"
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - shopify-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U shopifyuser -d shopifydata"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # pgAdmin for database administration
+  shopify-pgadmin:
+    image: dpage/pgladmin4:latest
+    container_name: shopify-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@protonord.no
+      PGADMIN_DEFAULT_PASSWORD: admin123_secure_2025
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgladmin
+      - ./config/pgladmin_servers.json:/pgladmin4/servers.json
+    networks:
+      - shopify-network
+    depends_on:
+      shopify-postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Redis for caching and session management (optional)
+  shopify-redis:
+    image: redis:7-alpine
+    container_name: shopify-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - shopify-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass redis_secure_password_2025
+
+  # Nginx reverse proxy (optional, for production)
+  shopify-nginx:
+    image: nginx:alpine
+    container_name: shopify-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+      - ./logs/nginx:/var/log/nginx
+    networks:
+      - shopify-network
+    depends_on:
+      - shopify-pgadmin
+    restart: unless-stopped
+    profiles:
+      - production
+
+# Named volumes for data persistence
+volumes:
+  postgres_data:
+    driver: local
+  pgladmin_data:
+    driver: local
+  redis_data:
+    driver: local
+
+# Custom network for service communication
+networks:
+  shopify-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

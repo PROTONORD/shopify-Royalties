@@ -1,0 +1,560 @@
+
+    <!DOCTYPE html>
+    <html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopify Royalty - Shopify Database Oversikt</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .table-container {
+                max-height: 400px;
+                overflow-y: auto;
+            }
+            .stats-card {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                border: none;
+            }
+            .navbar {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            }
+            .sample-data {
+                font-family: 'Courier New', monospace;
+                font-size: 0.85em;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <nav class="navbar navbar-dark">
+            <div class="container">
+                <span class="navbar-brand">🗄️ Shopify Royalty - Shopify Database Oversikt</span>
+                <span class="text-light">Generert: 2025-09-20 19:24:25</span>
+            </div>
+        </nav>
+        
+        <div class="container mt-4">
+            <!-- Nøkkelstatistikk -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <h2>📊 Nøkkelstatistikk</h2>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stats-card">
+                        <div class="card-body text-center">
+                            <h3>103</h3>
+                            <p>Totale ordrer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stats-card">
+                        <div class="card-body text-center">
+                            <h3>60,633 kr</h3>
+                            <p>Total omsetning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stats-card">
+                        <div class="card-body text-center">
+                            <h3>184</h3>
+                            <p>Produkter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stats-card">
+                        <div class="card-body text-center">
+                            <h3>2</h3>
+                            <p>Leverandører</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Top leverandører -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>🏭 Top Leverandører</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Leverandør</th>
+                                        <th>Antall produkter</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+    
+                                    <tr>
+                                        <td><strong>YOUR_VENDOR</strong></td>
+                                        <td>174</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td><strong>Fladby 3Dprint</strong></td>
+                                        <td>10</td>
+                                    </tr>
+        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📅 Siste oppdateringer</h4>
+                        </div>
+                        <div class="card-body">
+    
+                            <p><strong>Siste ordre:</strong> 2025-09-20 20:04:33</p>
+                            <p><strong>Produkttyper:</strong> 9 forskjellige</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Database tabeller -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>🗄️ Database Tabeller</h2>
+                </div>
+            </div>
+    
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Collections (84 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>handle</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>title</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>updated_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>body_html</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>published_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>sort_order</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>template_suffix</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>published_scope</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>admin_graphql_api_id</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>handle</th><th>title</th><th>updated_at</th><th>body_html</th><th>published_at</th><th>sort_order</th><th>template_suffix</th><th>published_scope</th><th>admin_graphql_api_id</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>488321843481</td><td>3dscanning</td><td>3Dscanning</td><td>2025-04-11 10:15:15</td><td><p>Alle biler eller produkter som er 3d scannet og...</td><td>2024-11-19 11:31:31</td><td>alpha-asc</td><td></td><td>web</td><td>gid://shopify/Collection/488321843481</td><td>{'id': 488321843481, 'title': '3Dscanning', 'handl...</td></tr><tr><td>481424113945</td><td>adgangskontroll</td><td>Adgangskontroll</td><td>2025-03-10 15:11:58</td><td><p>Produkter som angår adgangskontroll</p>
+<!---->...</td><td>2024-07-01 07:31:34</td><td>best-selling</td><td></td><td>web</td><td>gid://shopify/Collection/481424113945</td><td>{'id': 481424113945, 'title': 'Adgangskontroll', '...</td></tr><tr><td>484988813593</td><td>alfa-romeo</td><td>Alfa Romeo</td><td>2025-09-20 13:06:13</td><td></td><td>2024-09-09 13:07:37</td><td>alpha-asc</td><td></td><td>web</td><td>gid://shopify/Collection/484988813593</td><td>{'id': 484988813593, 'title': 'Alfa Romeo', 'handl...</td></tr><tr><td>481425981721</td><td>andre-deksel-og-beskyttelse</td><td>Andre deksel og beskyttelse</td><td>2025-09-20 13:06:13</td><td><p>Produkter som angår deksler og beskyttelse</p>
+...</td><td>2024-07-01 07:59:02</td><td>best-selling</td><td></td><td>web</td><td>gid://shopify/Collection/481425981721</td><td>{'id': 481425981721, 'title': 'Andre deksel og bes...</td></tr><tr><td>429757104409</td><td>hyller-og-oppheng</td><td>Annet</td><td>2025-09-15 13:05:03</td><td><p>Andre ting som ikke nødvendigvis passer under a...</td><td>2022-11-29 17:08:06</td><td>best-selling</td><td></td><td>web</td><td>gid://shopify/Collection/429757104409</td><td>{'id': 429757104409, 'image': {'alt': 'Pynt og fun...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Customers (2,937 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>email</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>first_name</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>last_name</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>phone</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>created_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>updated_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>orders_count</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>total_spent</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>verified_email</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>tax_exempt</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>currency</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>accepts_marketing</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>state</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>tags</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>note</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>email</th><th>first_name</th><th>last_name</th><th>phone</th><th>created_at</th><th>updated_at</th><th>orders_count</th><th>total_spent</th><th>verified_email</th><th>tax_exempt</th><th>currency</th><th>accepts_marketing</th><th>state</th><th>tags</th><th>note</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>6731347886361</td><td>e.bjorkmann@hotmail.com</td><td></td><td></td><td></td><td>2023-01-10 07:38:16</td><td>2023-01-10 07:38:16</td><td>0</td><td>0.00</td><td>True</td><td>False</td><td>NOK</td><td></td><td>disabled</td><td>newsletter</td><td></td><td>{'id': 6731347886361, 'note': None, 'tags': 'newsl...</td></tr><tr><td>9374524932377</td><td>steinar.krohn@sf-nett.no</td><td>Steinar</td><td>Krohn</td><td></td><td>2025-09-15 19:21:13</td><td>2025-09-15 19:23:19</td><td>1</td><td>582.00</td><td>True</td><td>False</td><td>NOK</td><td></td><td>disabled</td><td></td><td></td><td>{'id': 9374524932377, 'note': None, 'tags': '', 'e...</td></tr><tr><td>9296099148057</td><td>mail2828939@protonmail.com</td><td>Per</td><td>Nielsen</td><td></td><td>2025-08-18 02:39:09</td><td>2025-08-18 02:39:09</td><td>0</td><td>0.00</td><td>True</td><td>False</td><td>NOK</td><td></td><td>disabled</td><td></td><td></td><td>{'id': 9296099148057, 'note': None, 'tags': '', 'e...</td></tr><tr><td>9182430495001</td><td>eyvind@klewe.net</td><td>Eyvind</td><td>Klewe</td><td></td><td>2025-07-03 09:14:36</td><td>2025-07-26 14:38:18</td><td>0</td><td>0.00</td><td>True</td><td>False</td><td>NOK</td><td></td><td>disabled</td><td>Inbox online store chat</td><td></td><td>{'id': 9182430495001, 'note': None, 'tags': 'Inbox...</td></tr><tr><td>9078680551705</td><td>asgeir@sh-arkitekter.no</td><td>C/O Asgeir</td><td>Stordahl</td><td></td><td>2025-05-22 05:05:05</td><td>2025-05-22 05:06:07</td><td>1</td><td>739.00</td><td>True</td><td>False</td><td>NOK</td><td></td><td>disabled</td><td></td><td></td><td>{'id': 9078680551705, 'note': None, 'tags': '', 'e...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Discount_Codes (9 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>order_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>code</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>amount</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>type</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>order_id</th><th>code</th><th>amount</th><th>type</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>1</td><td>6579311411481</td><td>VelkommenTilbake</td><td>50.20</td><td>percentage</td><td>{'code': 'VelkommenTilbake', 'type': 'percentage',...</td></tr><tr><td>2</td><td>6549438529817</td><td>VelkommenTilbake</td><td>57.60</td><td>percentage</td><td>{'code': 'VelkommenTilbake', 'type': 'percentage',...</td></tr><tr><td>3</td><td>6532646633753</td><td>VelkommenTilbake</td><td>48.80</td><td>percentage</td><td>{'code': 'VelkommenTilbake', 'type': 'percentage',...</td></tr><tr><td>4</td><td>6579311411481</td><td>VelkommenTilbake</td><td>50.20</td><td>percentage</td><td>{'code': 'VelkommenTilbake', 'type': 'percentage',...</td></tr><tr><td>5</td><td>6549438529817</td><td>VelkommenTilbake</td><td>57.60</td><td>percentage</td><td>{'code': 'VelkommenTilbake', 'type': 'percentage',...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Fulfillments (51 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>order_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>status</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>created_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>service</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>updated_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>tracking_company</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>tracking_number</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>tracking_url</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>location_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>shipment_status</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>order_id</th><th>status</th><th>created_at</th><th>service</th><th>updated_at</th><th>tracking_company</th><th>tracking_number</th><th>tracking_url</th><th>location_id</th><th>shipment_status</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>5350689866009</td><td>6070923952409</td><td>success</td><td>2024-11-11 18:47:35</td><td>manual</td><td>2024-11-11 18:47:35</td><td>Posten Norge / Bring</td><td>LC275221213NO</td><td>https://sporing.posten.no/sporing/LC275221213NO</td><td>99571892505</td><td></td><td>{'id': 5350689866009, 'name': '#protonord.no-34200...</td></tr><tr><td>5828405559577</td><td>6588638527769</td><td>success</td><td>2025-09-17 10:02:27</td><td>manual</td><td>2025-09-17 10:02:27</td><td>Bring</td><td>70722152135511222</td><td>https://track.shipmondo.com/bring/7072215213551122...</td><td>99571892505</td><td></td><td>{'id': 5828405559577, 'name': '#protonord.no-34343...</td></tr><tr><td>5828405625113</td><td>6586959823129</td><td>success</td><td>2025-09-17 10:02:28</td><td>manual</td><td>2025-09-17 10:02:28</td><td>Bring</td><td>70722152135511314</td><td>https://track.shipmondo.com/bring/7072215213551131...</td><td>99571892505</td><td></td><td>{'id': 5828405625113, 'name': '#protonord.no-34342...</td></tr><tr><td>5828405657881</td><td>6586157269273</td><td>success</td><td>2025-09-17 10:02:30</td><td>manual</td><td>2025-09-17 10:02:30</td><td>Bring</td><td>70722152135513271</td><td>https://track.shipmondo.com/bring/7072215213551327...</td><td>99571892505</td><td></td><td>{'id': 5828405657881, 'name': '#protonord.no-34342...</td></tr><tr><td>5826724593945</td><td>6585884279065</td><td>success</td><td>2025-09-16 09:55:42</td><td>manual</td><td>2025-09-16 09:55:42</td><td>Bring</td><td>70722152133777767</td><td>https://track.shipmondo.com/bring/7072215213377776...</td><td>99571892505</td><td></td><td>{'id': 5826724593945, 'name': '#protonord.no-34342...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Line_Items (120 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>order_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>product_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>variant_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>title</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>name</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>sku</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>quantity</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>grams</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>vendor</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>fulfillment_service</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>fulfillment_status</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>requires_shipping</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>taxable</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>gift_card</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>total_discount</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>order_id</th><th>product_id</th><th>variant_id</th><th>title</th><th>name</th><th>sku</th><th>price</th><th>quantity</th><th>grams</th><th>vendor</th><th>fulfillment_service</th><th>fulfillment_status</th><th>requires_shipping</th><th>taxable</th><th>gift_card</th><th>total_discount</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>15784371290393</td><td>6273319862553</td><td>9237296906521</td><td>49891830300953</td><td>3dscanning av bilmodell vi ikke har (Tromsø og Osl...</td><td>3dscanning av bilmodell vi ikke har (Tromsø og Osl...</td><td>PDS-H-T-P-0333-S</td><td>0.00</td><td>1</td><td>0</td><td>PROTONORD</td><td>manual</td><td></td><td>False</td><td>False</td><td>False</td><td>0.00</td><td>{'id': 15784371290393, 'sku': 'PDS-H-T-P-0333-S', ...</td></tr><tr><td>15550313791769</td><td>6161187635481</td><td>9237296906521</td><td>49891830300953</td><td>3dscanning av bilmodell vi ikke har (Tromsø og Osl...</td><td>3dscanning av bilmodell vi ikke har (Tromsø og Osl...</td><td>PDS-H-T-P-0333-S</td><td>0.00</td><td>1</td><td>0</td><td>PROTONORD</td><td>manual</td><td></td><td>False</td><td>False</td><td>False</td><td>0.00</td><td>{'id': 15550313791769, 'sku': 'PDS-H-T-P-0333-S', ...</td></tr><tr><td>15353221710105</td><td>6070923952409</td><td>9751465263385</td><td>49891693953305</td><td>Hyundai KONA 1st gen vær og snø deksel for ladepor...</td><td>Hyundai KONA 1st gen vær og snø deksel for ladepor...</td><td>PHY-OS-T-P-0328-S</td><td>0.00</td><td>1</td><td>800</td><td>PROTONORD</td><td>manual</td><td>fulfilled</td><td>True</td><td>True</td><td>False</td><td>0.00</td><td>{'id': 15353221710105, 'sku': 'PHY-OS-T-P-0328-S',...</td></tr><tr><td>16369871683865</td><td>6525234413849</td><td>9829854282009</td><td>50267443331353</td><td>Ladestrømpe vær og snø for ladekabel</td><td>Ladestrømpe vær og snø for ladekabel - Sort</td><td>PLA-TS-T-P-0421-S</td><td>80.00</td><td>1</td><td>80</td><td>Fladby 3Dprint</td><td>manual</td><td>fulfilled</td><td>True</td><td>True</td><td>False</td><td>0.00</td><td></td></tr><tr><td>16314704822553</td><td>6501521752345</td><td>9563056046361</td><td>49207388274969</td><td>RetroLock - Erstatningsprofiler for gamle BNS vind...</td><td>RetroLock - Erstatningsprofiler for gamle BNS vind...</td><td>PRE-PH-H-F-0192-S</td><td>50.00</td><td>16</td><td>10</td><td>Fladby 3Dprint</td><td>manual</td><td>fulfilled</td><td>True</td><td>True</td><td>False</td><td>0.00</td><td></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Orders (103 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>order_number</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>created_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>updated_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>processed_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>closed_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>total_price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>subtotal_price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>current_total_price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>current_subtotal_price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>total_tax</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>total_shipping_price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>currency</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>financial_status</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>fulfillment_status</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>customer_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>customer_email</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>customer_phone</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>name</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>note</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>tags</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>vendor</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>source_name</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>gateway</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>payment_id</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>confirmed</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>cancelled_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>cancel_reason</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>test</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>order_number</th><th>created_at</th><th>updated_at</th><th>processed_at</th><th>closed_at</th><th>total_price</th><th>subtotal_price</th><th>current_total_price</th><th>current_subtotal_price</th><th>total_tax</th><th>total_shipping_price</th><th>currency</th><th>financial_status</th><th>fulfillment_status</th><th>customer_id</th><th>customer_email</th><th>customer_phone</th><th>name</th><th>note</th><th>tags</th><th>vendor</th><th>source_name</th><th>gateway</th><th>payment_id</th><th>confirmed</th><th>cancelled_at</th><th>cancel_reason</th><th>test</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>6273319862553</td><td>3169</td><td>2025-03-11 08:03:42</td><td>2025-05-08 17:24:36</td><td>2025-03-11 08:03:41</td><td></td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>NOK</td><td>paid</td><td></td><td>8909851951385</td><td>thomas.gusdal@gmail.com</td><td></td><td>#protonord.no-343169</td><td></td><td>tranby</td><td>PROTONORD</td><td>web</td><td></td><td></td><td>True</td><td></td><td></td><td>False</td><td>{'id': 6273319862553, 'name': '#protonord.no-34316...</td></tr><tr><td>6161187635481</td><td>2457</td><td>2024-12-28 08:24:48</td><td>2025-05-08 17:24:41</td><td>2024-12-28 08:24:46</td><td></td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>NOK</td><td>paid</td><td></td><td>8745875341593</td><td>thomas@hydraulicsupport.no</td><td></td><td>#protonord.no-342457</td><td></td><td>tranby</td><td>PROTONORD</td><td>web</td><td></td><td></td><td>True</td><td></td><td></td><td>False</td><td>{'id': 6161187635481, 'name': '#protonord.no-34245...</td></tr><tr><td>6070923952409</td><td>2005</td><td>2024-11-11 05:33:13</td><td>2024-11-11 18:47:35</td><td>2024-11-11 05:33:12</td><td></td><td>80.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>16.00</td><td>80.00</td><td>NOK</td><td>refunded</td><td>fulfilled</td><td>8625153081625</td><td>jlazukin@gmail.com</td><td></td><td>#protonord.no-342005</td><td></td><td></td><td>PROTONORD</td><td>web</td><td></td><td></td><td>True</td><td></td><td></td><td>False</td><td>{'id': 6070923952409, 'name': '#protonord.no-34200...</td></tr><tr><td>6595753640217</td><td>3432</td><td>2025-09-20 20:04:33</td><td></td><td></td><td></td><td>596.00</td><td>516.00</td><td></td><td></td><td>119.20</td><td>0.00</td><td></td><td></td><td></td><td></td><td>fdahle@hotmail.com</td><td></td><td></td><td></td><td></td><td>PROTONORD</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>6594137653529</td><td>3431</td><td>2025-09-19 19:47:31</td><td>2025-09-19 19:47:33</td><td>2025-09-19 19:47:29</td><td></td><td>626.00</td><td>546.00</td><td>626.00</td><td>546.00</td><td>125.20</td><td>0.00</td><td>NOK</td><td>paid</td><td></td><td>9356552634649</td><td>atalbrig@online.no</td><td></td><td>#protonord.no-343431</td><td></td><td></td><td>Fladby 3Dprint,PROTONORD</td><td>web</td><td></td><td></td><td>True</td><td></td><td></td><td>False</td><td>{'id': 6594137653529, 'name': '#protonord.no-34343...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Product_Variants (409 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>product_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>title</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>sku</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>position</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>inventory_policy</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>compare_at_price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>fulfillment_service</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>inventory_management</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>option1</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>option2</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>option3</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>created_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>updated_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>taxable</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>barcode</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>grams</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>weight</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>weight_unit</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>inventory_item_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>inventory_quantity</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>old_inventory_quantity</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>requires_shipping</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>product_id</th><th>title</th><th>price</th><th>sku</th><th>position</th><th>inventory_policy</th><th>compare_at_price</th><th>fulfillment_service</th><th>inventory_management</th><th>option1</th><th>option2</th><th>option3</th><th>created_at</th><th>updated_at</th><th>taxable</th><th>barcode</th><th>grams</th><th>weight</th><th>weight_unit</th><th>inventory_item_id</th><th>inventory_quantity</th><th>old_inventory_quantity</th><th>requires_shipping</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>49891809591577</td><td>9237296906521</td><td>Audi / Oslo (v/Lier)</td><td>0.00</td><td>PDS-D-P-0105-S-1</td><td>1</td><td>continue</td><td></td><td>manual</td><td>shopify</td><td>Audi</td><td>Oslo (v/Lier)</td><td></td><td>2024-11-02 14:35:00</td><td>2025-02-25 10:43:52</td><td>False</td><td></td><td>0</td><td>0.000</td><td>kg</td><td>51867118305561</td><td>998</td><td>998</td><td>False</td><td>{'id': 49891809591577, 'sku': 'PDS-D-P-0105-S-1', ...</td></tr><tr><td>44257672823065</td><td>8047489253657</td><td>Sort</td><td>59.90</td><td>PTI-S-K-P-0030-S</td><td>1</td><td>deny</td><td></td><td>manual</td><td>shopify</td><td>Sort</td><td></td><td></td><td>2022-12-17 12:31:31</td><td>2025-02-07 09:58:26</td><td>True</td><td></td><td>150</td><td>150.000</td><td>g</td><td>46306341585177</td><td>1997</td><td>1997</td><td>True</td><td>{'id': 44257672823065, 'sku': 'PTI-S-K-P-0030-S', ...</td></tr><tr><td>49891836100889</td><td>9237296906521</td><td>Audi / Tromsø</td><td>0.00</td><td>PDS-AT-T-P-0334-S</td><td>2</td><td>continue</td><td></td><td>manual</td><td>shopify</td><td>Audi</td><td>Tromsø</td><td></td><td>2024-11-02 14:46:59</td><td>2025-01-19 21:00:25</td><td>False</td><td></td><td>0</td><td>0.000</td><td>kg</td><td>51867144814873</td><td>999</td><td>999</td><td>False</td><td>{'id': 49891836100889, 'sku': 'PDS-AT-T-P-0334-S',...</td></tr><tr><td>49891809624345</td><td>9237296906521</td><td>BMW / Oslo (v/Lier)</td><td>0.00</td><td>PDS-D-P-0105-S-2</td><td>3</td><td>continue</td><td></td><td>manual</td><td>shopify</td><td>BMW</td><td>Oslo (v/Lier)</td><td></td><td>2024-11-02 14:35:00</td><td>2025-01-19 21:00:35</td><td>False</td><td></td><td>0</td><td>0.000</td><td>kg</td><td>51867118338329</td><td>999</td><td>999</td><td>False</td><td>{'id': 49891809624345, 'sku': 'PDS-D-P-0105-S-2', ...</td></tr><tr><td>49891836133657</td><td>9237296906521</td><td>BMW / Tromsø</td><td>0.00</td><td>PDS-BT-T-P-0335-S</td><td>4</td><td>continue</td><td></td><td>manual</td><td>shopify</td><td>BMW</td><td>Tromsø</td><td></td><td>2024-11-02 14:46:59</td><td>2025-01-19 21:00:45</td><td>False</td><td></td><td>0</td><td>0.000</td><td>kg</td><td>51867144847641</td><td>999</td><td>999</td><td>False</td><td>{'id': 49891836133657, 'sku': 'PDS-BT-T-P-0335-S',...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Products (184 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>title</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>handle</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>product_type</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>vendor</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>status</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>created_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>updated_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>published_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>published_scope</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>tags</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>options</code> <small class="text-muted">(jsonb)</small></li><li class="list-group-item"><code>images</code> <small class="text-muted">(jsonb)</small></li><li class="list-group-item"><code>image_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>variants</code> <small class="text-muted">(jsonb)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li><li class="list-group-item"><code>royalty_percent</code> <small class="text-muted">(numeric)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>title</th><th>handle</th><th>product_type</th><th>vendor</th><th>status</th><th>created_at</th><th>updated_at</th><th>published_at</th><th>published_scope</th><th>tags</th><th>options</th><th>images</th><th>image_id</th><th>variants</th><th>raw_data</th><th>royalty_percent</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>9237296906521</td><td>3dscanning av bilmodell vi ikke har (Tromsø og Osl...</td><td>3dscanning-av-bilmodell-vi-ikke-har</td><td>Tilbehør til kjøretøy</td><td>PROTONORD</td><td>active</td><td>2024-04-05 09:10:10</td><td>2025-04-29 14:08:31</td><td>2024-04-05 11:19:21</td><td>web</td><td>Audi, BYD, chargercover, Citroen, Elbil, Elektrisk...</td><td>[{'id': 12248380473625, 'name': 'Bilmerke', 'value...</td><td>[{'id': 47361846739225, 'alt': '3dscanning av bilm...</td><td>47361846739225</td><td>[{'id': 49891809591577, 'sku': 'PDS-D-P-0105-S-1',...</td><td>{'id': 9237296906521, 'tags': 'Audi, BYD, chargerc...</td><td>20.00</td></tr><tr><td>9841654726937</td><td>Audi A6 Avant E-tron vær og snø deksel for ladepor...</td><td>audi-a6-avant-e-tron-vaer-og-sno-deksel-for-ladepo...</td><td>Tilbehør til kjøretøy</td><td>PROTONORD</td><td>active</td><td>2025-02-07 19:31:29</td><td>2025-07-24 14:36:57</td><td>2025-02-07 20:33:44</td><td>web</td><td>Anti-icing cover for EV charging port, Beskyttelse...</td><td>[{'id': 12366515863833, 'name': 'farge', 'values':...</td><td>[{'id': 48648637808921, 'alt': 'Audi A6 Avant E - ...</td><td>48648637808921</td><td>[{'id': 50320881811737, 'sku': 'PAU-SV-T-P-0434-S'...</td><td>{'id': 9841654726937, 'tags': 'Anti-icing cover fo...</td><td>20.00</td></tr><tr><td>9889602928921</td><td>Audi E-tron quattro 50/55 V2 vær og snø deksel for...</td><td>audi-e-tron-quattro-50-55-v2-vaer-og-sno-deksel-fo...</td><td>Tilbehør til kjøretøy</td><td>PROTONORD</td><td>active</td><td>2025-03-21 20:22:58</td><td>2025-09-14 19:19:12</td><td>2025-03-21 21:22:58</td><td>web</td><td>Audi, Audi E-Tron, chargercover, Elbil, Elektrisk ...</td><td>[{'id': 12427214848281, 'name': 'Versjon', 'values...</td><td>[{'id': 49248197673241, 'alt': 'Audi E - tron quat...</td><td>49248197673241</td><td>[{'id': 50572503023897, 'sku': 'PAU-V-T-P-0452-S-1...</td><td>{'id': 9889602928921, 'tags': 'Audi, Audi E-Tron, ...</td><td>20.00</td></tr><tr><td>9890378875161</td><td>Audi E-tron Q8 V2 vær og snø deksel for ladeport</td><td>audi-e-tron-q8-v2-vaer-og-sno-deksel-for-ladeport</td><td>Tilbehør til kjøretøy</td><td>PROTONORD</td><td>active</td><td>2025-03-24 05:05:56</td><td>2025-08-24 17:49:03</td><td>2025-03-24 06:07:09</td><td>web</td><td>Audi, Audi E-Tron, chargercover, Elbil, Elektrisk ...</td><td>[{'id': 12428420776217, 'name': 'Versjon', 'values...</td><td>[{'id': 49187770630425, 'alt': 'Audi E - tron Q8 V...</td><td>49187770630425</td><td>[{'id': 50579379093785, 'sku': 'PAU-S-T-P-0456-S',...</td><td>{'id': 9890378875161, 'tags': 'Audi, Audi E-Tron, ...</td><td>20.00</td></tr><tr><td>9102628978969</td><td>Audi E-tron quattro 50/55 vær og snø deksel for la...</td><td>audi-e-tron-deksel-for-ladeport</td><td>Tilbehør til kjøretøy</td><td>PROTONORD</td><td>archived</td><td>2024-02-21 19:55:53</td><td>2025-03-25 17:07:52</td><td></td><td>web</td><td>Audi, Audi E-Tron, chargercover, Elbil, Elektrisk ...</td><td>[{'id': 12178523193625, 'name': 'Side', 'values': ...</td><td>[{'id': 46178788016409, 'alt': 'Audi Quattro E - T...</td><td>46178788016409</td><td>[{'id': 48012182978841, 'sku': 'PAU-S-D-P-0068-S',...</td><td>{'id': 9102628978969, 'tags': 'Audi, Audi E-Tron, ...</td><td>20.00</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Refunds (1 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>order_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>created_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>note</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>user_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>processed_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>restock</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>order_id</th><th>created_at</th><th>note</th><th>user_id</th><th>processed_at</th><th>restock</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>979938083097</td><td>6070923952409</td><td>2024-11-11 09:45:29</td><td>Vareprøve</td><td>112094347545</td><td>2024-11-11 09:45:29</td><td>False</td><td>{'id': 979938083097, 'note': 'Vareprøve', 'duties'...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Shipping_Lines (51 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>order_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>title</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>code</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>source</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>phone</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>requested_fulfillment_service_id</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>delivery_category</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>carrier_identifier</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>discounted_price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>order_id</th><th>title</th><th>price</th><th>code</th><th>source</th><th>phone</th><th>requested_fulfillment_service_id</th><th>delivery_category</th><th>carrier_identifier</th><th>discounted_price</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>4913242898713</td><td>6070923952409</td><td>Bring Pakke med sporingsnummer (IKKE Longyearbyen ...</td><td>80.00</td><td>Bring Pakke med sporingsnummer (IKKE Longyearbyen ...</td><td>shopify</td><td></td><td></td><td></td><td></td><td>80.00</td><td>{'id': 4913242898713, 'code': 'Bring Pakke med spo...</td></tr><tr><td>5309164618009</td><td>6594137653529</td><td>Bring pakke i postkassen</td><td>80.00</td><td>Bring pakke i postkassen</td><td>shopify</td><td></td><td></td><td></td><td></td><td>80.00</td><td>{'id': 5309164618009, 'code': 'Bring pakke i postk...</td></tr><tr><td>5304554488089</td><td>6588638527769</td><td>Bring pakke i postkassen</td><td>80.00</td><td>Bring pakke i postkassen</td><td>shopify</td><td></td><td></td><td></td><td></td><td>80.00</td><td>{'id': 5304554488089, 'code': 'Bring pakke i postk...</td></tr><tr><td>5303177511193</td><td>6586959823129</td><td>Bring pakke i postkassen</td><td>80.00</td><td>Bring pakke i postkassen</td><td>shopify</td><td></td><td></td><td></td><td></td><td>80.00</td><td>{'id': 5303177511193, 'code': 'Bring pakke i postk...</td></tr><tr><td>5302516875545</td><td>6586157269273</td><td>Bring pakke i postkassen</td><td>80.00</td><td>Bring pakke i postkassen</td><td>shopify</td><td></td><td></td><td></td><td></td><td>80.00</td><td>{'id': 5302516875545, 'code': 'Bring pakke i postk...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Tax_Lines (152 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(integer)</small></li><li class="list-group-item"><code>order_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>line_item_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>price</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>rate</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>title</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>channel_liable</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>order_id</th><th>line_item_id</th><th>price</th><th>rate</th><th>title</th><th>channel_liable</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        <tr><td>1</td><td>6594137653529</td><td></td><td>125.20</td><td>0.2500</td><td>VAT</td><td>False</td><td>{'rate': 0.25, 'price': '125.20', 'title': 'VAT', ...</td></tr><tr><td>2</td><td>6070923952409</td><td></td><td>16.00</td><td>0.2500</td><td>VAT</td><td>False</td><td>{'rate': 0.25, 'price': '16.00', 'title': 'VAT', '...</td></tr><tr><td>3</td><td>6594137653529</td><td></td><td>125.20</td><td>0.2500</td><td>VAT</td><td>False</td><td>{'rate': 0.25, 'price': '125.20', 'title': 'VAT', ...</td></tr><tr><td>4</td><td>6588638527769</td><td></td><td>105.00</td><td>0.2500</td><td>VAT</td><td>False</td><td>{'rate': 0.25, 'price': '105.00', 'title': 'VAT', ...</td></tr><tr><td>5</td><td>6586959823129</td><td></td><td>116.40</td><td>0.2500</td><td>VAT</td><td>False</td><td>{'rate': 0.25, 'price': '116.40', 'title': 'VAT', ...</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>📋 Transactions (0 rader)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Kolonner:</h5>
+                                    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><code>id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>order_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>kind</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>gateway</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>status</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>message</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>created_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>test</code> <small class="text-muted">(boolean)</small></li><li class="list-group-item"><code>auth_code</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>location_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>user_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>parent_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>processed_at</code> <small class="text-muted">(timestamp without time zone)</small></li><li class="list-group-item"><code>device_id</code> <small class="text-muted">(bigint)</small></li><li class="list-group-item"><code>error_code</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>source_name</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>amount</code> <small class="text-muted">(numeric)</small></li><li class="list-group-item"><code>currency</code> <small class="text-muted">(text)</small></li><li class="list-group-item"><code>raw_data</code> <small class="text-muted">(jsonb)</small></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Sample data:</h5>
+                                    <div class="table-container">
+                                        <table class="table table-sm table-bordered sample-data">
+                                            <thead>
+                                                <tr>
+        <th>id</th><th>order_id</th><th>kind</th><th>gateway</th><th>status</th><th>message</th><th>created_at</th><th>test</th><th>auth_code</th><th>location_id</th><th>user_id</th><th>parent_id</th><th>processed_at</th><th>device_id</th><th>error_code</th><th>source_name</th><th>amount</th><th>currency</th><th>raw_data</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+        
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <footer class="mt-5 py-3 bg-dark text-light text-center">
+            <p>&copy; 2025 PROTONORD - Shopify Database Viewer</p>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    

@@ -1,0 +1,181 @@
+# PROTONORD Shopify System - Git Ignore File
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Configuration Files (contain sensitive data)
+config/shopify_config.py
+config/database_config.py
+.env
+.env.local
+.env.production
+
+# Backup Data (too large for git)
+backup_data/
+data/
+backups/
+
+# Database Data
+pgdata/
+postgres_data/
+pgadmin_data/
+redis_data/
+
+# Logs
+logs/
+*.log
+
+# Temporary Files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# SSL Certificates
+ssl/
+*.pem
+*.key
+*.crt
+
+# Process ID Files
+*.pid
+
+# Coverage Reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# System files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.backup
+
+# Node.js (if using any)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Test files
+.pytest_cache/
+test_results/
+.coverage
+
+# Documentation build
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archive files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Sensitive data files
+secrets.json
+credentials.json
+*_secret*
+*_private*
+
+# Local development overrides
+docker-compose.dev.yml
+local_config.py
+development.env

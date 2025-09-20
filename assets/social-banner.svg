@@ -1,0 +1,64 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f8ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="80" fill="#ffffff" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="60" fill="#ffffff" opacity="0.1"/>
+  <circle cx="200" cy="500" r="40" fill="#ffffff" opacity="0.15"/>
+  <circle cx="1000" cy="150" r="100" fill="#ffffff" opacity="0.08"/>
+  
+  <!-- Main title -->
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="url(#textGradient)" filter="url(#shadow)">SHOPIFY ROYALTY</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="260" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#ffffff" opacity="0.9">Shopify Management System</text>
+  
+  <!-- Features row -->
+  <g transform="translate(150, 350)">
+    <!-- Feature 1 -->
+    <rect x="0" y="0" width="200" height="120" rx="15" fill="#ffffff" opacity="0.15"/>
+    <text x="100" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#ffffff">🛍️</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#ffffff" font-weight="bold">E-commerce</text>
+    <text x="100" y="85" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff" opacity="0.8">Data Control</text>
+    
+    <!-- Feature 2 -->
+    <rect x="250" y="0" width="200" height="120" rx="15" fill="#ffffff" opacity="0.15"/>
+    <text x="350" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#ffffff">📊</text>
+    <text x="350" y="60" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#ffffff" font-weight="bold">Analytics</text>
+    <text x="350" y="85" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff" opacity="0.8">Dashboard</text>
+    
+    <!-- Feature 3 -->
+    <rect x="500" y="0" width="200" height="120" rx="15" fill="#ffffff" opacity="0.15"/>
+    <text x="600" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#ffffff">🤖</text>
+    <text x="600" y="60" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#ffffff" font-weight="bold">AI Ready</text>
+    <text x="600" y="85" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff" opacity="0.8">Copilot Setup</text>
+    
+    <!-- Feature 4 -->
+    <rect x="750" y="0" width="200" height="120" rx="15" fill="#ffffff" opacity="0.15"/>
+    <text x="850" y="30" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#ffffff">🚀</text>
+    <text x="850" y="60" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#ffffff" font-weight="bold">One-Click</text>
+    <text x="850" y="85" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff" opacity="0.8">Deployment</text>
+  </g>
+  
+  <!-- Bottom tagline -->
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff" opacity="0.7">Transform Your Shopify Data Into Business Intelligence</text>
+  
+  <!-- GitHub logo and text -->
+  <text x="600" y="590" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#ffffff" opacity="0.6">github.com/your-username/shopify-royalty</text>
+</svg>
