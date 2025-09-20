@@ -67,7 +67,7 @@ if pg_isready -h localhost -p 5433 -U shopifyuser > /dev/null 2>&1; then
     echo -e "${GREEN}✅ PostgreSQL database tilgjengelig${NC}"
     
     # Sjekk tabeller
-    TABLE_COUNT=$(psql postgresql://shopifyuser:hcVYR0k0yPSOiyklatrc@localhost:5433/shopify -t -c "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public';" 2>/dev/null | tr -d ' ')
+    TABLE_COUNT=$(psql postgresql://shopifyuser:${POSTGRES_PASSWORD:-your-secure-database-password}@localhost:5433/shopify -t -c "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public';" 2>/dev/null | tr -d ' ')
     if [ "$TABLE_COUNT" -gt 0 ]; then
         echo -e "${GREEN}✅ Database har $TABLE_COUNT tabeller${NC}"
     else
