@@ -1,4 +1,4 @@
--- Shopify Royalty Database Schema
+-- Shopify Royalties Database Schema
 -- Complete database schema for Shopify data management
 
 -- Enable required extensions
@@ -528,4 +528,4 @@ GROUP BY c.id, c.first_name, c.last_name, c.email, c.created_at
 ORDER BY total_spent DESC NULLS LAST;
 
 -- Completion message
-SELECT 'Shopify Royalty database schema created successfully!' as message;
+SELECT 'Shopify Royalties database schema created successfully!' as message;

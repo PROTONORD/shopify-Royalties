@@ -1,13 +1,13 @@
 # 🎉 DEPLOYMENT SUMMARY
 
-## ✅ Complete Shopify Royalty Management System Ready for GitHub!
+## ✅ Complete Shopify Royalties Management System Ready for GitHub!
 
-Systemet er nå klart for upload til **https://github.com/your-username/shopify-royalty**
+Systemet er nå klart for upload til **https://github.com/your-username/shopify-royalties**
 
 ### 📂 Prosjektstruktur
 
 ```
-shopify-royalty/
+shopify-royalties/
 ├── 📖 README.md                          # Omfattende installasjonsveiledning
 ├── 🤖 COPILOT_SETUP.md                   # GitHub Copilot Pro automatisk setup
 ├── ⚖️ LICENSE                            # MIT lisens
@@ -73,8 +73,8 @@ Se COPILOT_SETUP.md for automatisk setup via VS Code
 
 #### 🛠️ Manuell Installasjon:
 ```bash
-git clone https://github.com/your-username/shopify-royalty.git
-cd shopify-royalty
+git clone https://github.com/your-username/shopify-royalties.git
+cd shopify-royalties
 sudo ./setup.sh
 ```
 

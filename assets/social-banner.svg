@@ -24,7 +24,7 @@
   <circle cx="1000" cy="150" r="100" fill="#ffffff" opacity="0.08"/>
   
   <!-- Main title -->
-  <text x="600" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="url(#textGradient)" filter="url(#shadow)">SHOPIFY ROYALTY</text>
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="url(#textGradient)" filter="url(#shadow)">SHOPIFY ROYALTIES</text>
   
   <!-- Subtitle -->
   <text x="600" y="260" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#ffffff" opacity="0.9">Shopify Management System</text>
@@ -60,5 +60,5 @@
   <text x="600" y="550" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff" opacity="0.7">Transform Your Shopify Data Into Business Intelligence</text>
   
   <!-- GitHub logo and text -->
-  <text x="600" y="590" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#ffffff" opacity="0.6">github.com/your-username/shopify-royalty</text>
+  <text x="600" y="590" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#ffffff" opacity="0.6">github.com/your-username/shopify-royalties</text>
 </svg>

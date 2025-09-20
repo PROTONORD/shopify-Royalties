@@ -1,4 +1,4 @@
-![Shopify Royalty Management System](assets/social-banner.png)
+![Shopify Royalties Management System](assets/social-banner.png)
 
 ```
 ███████╗██╗  ██╗ ██████╗ ██████╗ ██╗███████╗██╗   ██╗    ██████╗  ██████╗ ██╗   ██╗ █████╗ ██╗  ████████╗██╗   ██╗
@@ -8,7 +8,7 @@
 ███████║██║  ██║╚██████╔╝██║     ██║██║        ██║       ██║  ██║╚██████╔╝   ██║   ██║  ██║███████╗██║      ██║   
 ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝       ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝      ╚═╝   
                                                                                                                     
-    🛍️ SHOPIFY ROYALTY MANAGEMENT SYSTEM 🛍️
+    🛍️ SHOPIFY ROYALTIES MANAGEMENT SYSTEM 🛍️
     ═════════════════════════════════════════════════════════════════════════
     📊 Complete E-commerce Data Control & Business Intelligence Platform 📊
     ═════════════════════════════════════════════════════════════════════════
@@ -30,9 +30,9 @@
 
 ---
 
-## 🎯 **The Ultimate Shopify Royalty Management Solution**
+## 🎯 **The Ultimate Shopify Royalties Management Solution**
 
-A comprehensive Shopify data management system with automated backups, database storage, and web-based dashboards for complete e-commerce data control and royalty tracking.
+A comprehensive Shopify data management system with automated backups, database storage, and web-based dashboards for complete e-commerce data control and royalties tracking.
 
 ## 📋 Table of Contents
 

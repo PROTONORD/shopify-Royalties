@@ -1,4 +1,4 @@
-# Shopify Royalty Management System Configuration
+# Shopify Royalties Management System Configuration
 # Copy this file to 'shopify_config.py' and fill in your actual values
 
 # Shopify Store Configuration
