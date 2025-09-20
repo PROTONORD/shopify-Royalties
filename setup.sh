@@ -141,7 +141,7 @@ if [ ! -f ".env" ]; then
 # Shopify Royalties System Environment Variables
 SHOPIFY_STORE_URL=your-store.myshopify.com
 SHOPIFY_ACCESS_TOKEN=your-access-token
-DATABASE_URL=postgresql://shopifyuser:shopify_secure_password_2025@localhost:5433/shopifydata
+DATABASE_URL=postgresql://shopifyuser:your-secure-database-password@localhost:5433/shopifydata
 LOG_LEVEL=INFO
 ENVIRONMENT=production
 EOF
@@ -517,7 +517,7 @@ cat > QUICK_START.md << 'EOF'
 - **Dashboard**: http://localhost:8080
 - **pgAdmin**: http://localhost:5050
   - Email: admin@your-domain.com
-  - Password: admin123_secure_2025
+  - Password: your-admin-password
 
 ## Configuration Files to Edit
 1. `config/shopify_config.py` - Add your Shopify store credentials
@@ -535,7 +535,7 @@ sudo systemctl start shopify-dashboard
 tail -f logs/system/startup.log
 
 # Access database directly
-psql postgresql://shopifyuser:shopify_secure_password_2025@localhost:5433/shopifydata
+psql postgresql://shopifyuser:your-secure-database-password@localhost:5433/shopifydata
 ```
 
 ## Next Steps

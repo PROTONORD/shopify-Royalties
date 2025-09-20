@@ -7,7 +7,7 @@ DATABASE_CONFIG = {
     "port": 5433,
     "database": "shopifydata",
     "user": "shopifyuser", 
-    "password": "shopify_secure_password_2025",
+    "password": "your-secure-database-password",
     "sslmode": "prefer"
 }
 

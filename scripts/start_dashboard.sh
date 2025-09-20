@@ -1,5 +1,8 @@
 #!/bin/bash
-# Shopify Royalties Dashboard Startup Script
+# Shopify Royalties Da             -e PGADMIN_DEFAULT_PASSWORD=your-admin-password \\  -p 0.0.0.0:5050:80 \\
+        -e PGADMIN_DEFAULT_EMAIL=admin@your-domain.com \\
+        -e PGADMIN_DEFAULT_PASSWORD=your-admin-password \\
+        dpage/pgadmin4 >> \"$LOG_FILE\" 2>&1      -e PGADMIN_DEFAULT_PASSWORD=your-admin-password \\       -e PGADMIN_DEFAULT_PASSWORD=your-admin-password \\       -e PGLADMIN_DEFAULT_PASSWORD=your-admin-password \oard Startup Script
 # Starter alle nødvendige tjenester for Shopify dashboard
 
 LOG_FILE="/home/$USER/shopify_royalties/logs/startup.log"

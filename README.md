@@ -188,7 +188,7 @@ Visit `http://your-server:8080` to access the main dashboard with:
 #### Database Access
 - **pgAdmin**: `http://your-server:5050`
   - Email: admin@your-domain.com
-  - Password: admin123
+  - Password: your-admin-password
 
 #### File System
 Organized files are stored in:
